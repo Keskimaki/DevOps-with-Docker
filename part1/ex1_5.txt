@@ -1,0 +1,9 @@
+docker pull devopsdockeruh/simple-web-service:ubuntu
+docker pull devopsdockeruh/simple-web-service:alpine
+
+REPOSITORY                          TAG       IMAGE ID       CREATED         SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   11 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   11 months ago   15.7MB
+
+docker run -d --rm --name alpine devopsdockeruh/simple-web-service:alpine
+docker exec alpine sh -c 'tail -f ./text.log'

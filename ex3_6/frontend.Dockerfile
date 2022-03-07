@@ -1,3 +1,4 @@
+# 1.17GB -> 94MB
 FROM node:16-alpine AS build-env
 
 WORKDIR /usr/src/app

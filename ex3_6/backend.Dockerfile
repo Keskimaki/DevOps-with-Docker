@@ -1,3 +1,4 @@
+# 1.07GB -> 23.3MB
 FROM golang:alpine AS build-env
 
 WORKDIR /usr/src/app
